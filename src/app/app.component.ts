@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lesson2';
+  title = 'Form about you';
+  treatment = 'Dear user please, write your interests';
+  userName = ' ';
+  listOfInterests = ['music'];
+  interest = '';
+  handleClick(){
+    this.listOfInterests.push(this.interest);
+  }
+  backgroundColor = true;
+
 }
